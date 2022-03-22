@@ -234,8 +234,7 @@ img {
 .services-item:last-child {
   margin: 0;
 }
-.services-img {
-}
+
 /* Team */
 .team-section {
   background-color: var(--main-background-color);
@@ -285,6 +284,18 @@ img {
   height: 260px;
   margin-bottom: 30px;
 }
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 /* постійні клієнти */
 .client {
   display: flex;
@@ -315,8 +326,7 @@ img {
 .address-item {
   margin-bottom: 9px;
 }
-.address-list {
-}
+
 .address-con {
   line-height: 1.71;
 }
@@ -366,8 +376,7 @@ img {
 .main-portfilio {
   background-color: var(--secondary-color);
 }
-.img-port {
-}
+
 .content-name {
   margin-bottom: 4px;
 
@@ -408,5 +417,3 @@ img {
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
 }
-.grp-0{
-  
