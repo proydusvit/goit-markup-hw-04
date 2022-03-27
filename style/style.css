@@ -9,6 +9,7 @@
   --maint-text-color: rgba(117, 117, 117, 1);
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway;
+  --svg-icon-color: rgba(175, 177, 184, 1);
 }
 body {
   font-family: var(--main-font);
@@ -138,6 +139,18 @@ img {
   padding-bottom: 200px;
   background-color: var(--background-futter-and-main);
   text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--background-futter-and-main);
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/mainecard/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-title {
   width: 696px;
@@ -189,16 +202,17 @@ img {
   margin-right: 30px;
 }
 .adva-svg {
+  height: 120px;
+  align-items: center;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  background-color: var(--btn-portfolio);
 }
 
-.antena {
-  width: 270px;
-  height: 120px;
-
-  background-color: var(--btn-portfolio);
+.adv-svg {
+  width: 70px;
+  height: 70px;
 }
 
 .adva-item :last-child {
@@ -273,7 +287,7 @@ img {
 }
 .people-skil {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -289,17 +303,65 @@ img {
   justify-content: center;
   align-items: center;
 
+  margin-bottom: 30px;
+  margin-right: 10px;
+
   width: 44px;
   height: 44px;
 
   background-color: #fff;
   border-radius: 50%;
+  fill: var(--svg-icon-color);
+}
+
+.socials-link:hover {
+  background-color: var(--hover-logo-btn-color);
+  fill: var(--secondary-color);
+}
+.socials-link:focus {
+  background-color: var(--hover-logo-btn-color);
+  fill: var(--secondary-color);
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
 }
 
 /* постійні клієнти */
 .client {
   display: flex;
+  justify-content: center;
 }
+.client-item {
+  margin-right: 30px;
+}
+
+.grp-0 {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  align-items: center;
+  justify-content: center;
+  fill: var(--svg-icon-color);
+  cursor: pointer;
+}
+
+.group {
+  background-size: contain;
+}
+.grp-0:hover {
+  border-color: var(--hover-logo-btn-color);
+
+  fill: var(--hover-logo-btn-color);
+}
+.grp-0:focus {
+  border-color: var(--hover-logo-btn-color);
+
+  fill: var(--hover-logo-btn-color);
+}
+
 /* Футер */
 
 .log-sec {
@@ -316,10 +378,10 @@ img {
 }
 .address {
   font-style: normal;
+  margin-right: 70px;
 }
 .address-street {
   margin-bottom: 9px;
-
   line-height: 1.71;
   color: var(--secondary-color);
 }
@@ -332,6 +394,29 @@ img {
 }
 .address-item:last-child {
   margin: 0%;
+}
+.container-footer {
+  display: flex;
+  align-content: flex-start;
+}
+.social-link-2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--secondary-color);
+}
+
+.fot-link {
+  display: flex;
+}
+.foot-link-social {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+  margin-top: 12px;
 }
 /* кнопки портфолио */
 .button-list {
@@ -361,9 +446,20 @@ img {
 .button:hover {
   color: var(--secondary-color);
   background-color: var(--hover-logo-btn-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .button:focus {
-  color: var(--hover-logo-btn-color);
+  color: var(--secondary-color);
+  background-color: var(--hover-logo-btn-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /* контент портфолио */
 
@@ -404,6 +500,13 @@ img {
 .content-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.content-item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 .content-div {
   padding-top: 20px;
   padding-left: 24px;
@@ -411,9 +514,4 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
-.group {
-  width: 170px;
-  height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
 }
